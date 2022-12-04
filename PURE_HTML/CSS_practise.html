@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    
+    
+    <style>
+
+    .backText{
+        font-weight: bold;
+        text-align: center;
+        color: black;
+    }
+
+
+    
+        body{
+        display: flex;
+        justify-content: center;
+    }
+    .box{
+        height: 70px;
+        width: 70px;
+        border: 1px solid black;
+        text-align: center;
+        margin: 10px;
+        background: rgb(99, 179, 202); 
+        }
+
+        @media(max-width:500px){
+            body{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .box{
+            height: 70px;
+            width: 70px;
+            border: 1px solid black;
+            text-align: center;
+            margin: 10px;
+            background-color: yellow;
+        }
+        }
+
+
+        @media (min-width:501px) and (max-width:766px) {
+            body{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                /* gap: 50px; */
+            }
+            .box{
+            height: 70px;
+            width: 70px;
+            border: 1px solid black;
+            text-align: center;
+            margin: 10px;
+            background-color: rgb(226, 63, 63);
+            border-radius: 50px;
+            
+        }  
+        }
+
+
+        @media (min-width:799px) {
+            body{
+                 background-color: rgb(70, 47, 20);
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">One</div>
+    <div class="box">Two</div>
+    <div class="box">Three</div>
+    <div class="box">Four</div>
+    <div class="box">Five</div>
+
+
+    <div class="backText"><a href="./index.html">Back</a></div>
+</body>
+</html>
