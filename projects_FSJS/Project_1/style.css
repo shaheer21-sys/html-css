@@ -1,0 +1,99 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+.container{
+    margin-top: 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 40px 100px;
+
+}
+
+nav img{
+    width: 100px;
+}
+.list{
+    display: flex;
+    list-style: none;
+    margin-left: -460px;
+    font-size: 14px;
+    color: #c6c6c6;
+
+}
+
+.list :first-child{
+color: #111111;
+
+}
+
+.list-item{
+    margin-right: 30px;
+
+}
+
+
+.nav-button{
+    width: 140px;
+    height: 50px;
+    padding: 10px 20px;
+    background-color: #5955b3;
+    color: white;
+    border-radius: 10px;
+    border: none ;
+    font-size: 15px;
+}
+
+.banner-container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-top: 50px;
+    /* gap: 40px; */
+
+}
+
+.heading-text{
+    font-size: 60px;
+    color: #3c2f60;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+
+.left{
+    margin:100px 0 0 100px;
+    width: 30%;
+}
+
+span{
+  color: #5955b3;  
+}
+
+.description{
+    padding-right: 80px;
+    font-size: 15px;
+    margin: 20px 0 50px 0;
+    color: #8d8d8ddb;
+}
+
+.btn{
+    /* padding: 20px 50px; */
+    width: 200px;
+    height: 60px;
+}
+
+.banner-container img{
+
+    width: 800px;
+}
+

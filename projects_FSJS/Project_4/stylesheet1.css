@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #F9F5ED;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    /* padding: 20px; */
+    height: 15vh;
+    margin: 20px 0 0 150px;
+    
+    
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 5%;
+    font-weight: 400;
+    font-size: 13px;
+   
+}
+
+ul li:first-child img{
+
+    width: 90px;
+}
+
+
+/* CSS for main section  */
+
+
+main{
+    display: flex;
+    align-items: center;
+    /* justify-content: center;  */
+
+    /* margin-left: 35px ; */
+    /* margin-top: 70px; */
+
+    
+}
+
+.leftmain{
+width: 30%;
+margin-left: 160px;
+margin-top: 80px;
+
+}
+
+.leftmain h1 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.leftmain p {
+    font-weight: 300;
+    font-size: 12px ;
+    margin: 5% 0;
+}
+
+.leftmain button{
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color:  #3b855b;
+    color: #F9F5ED;
+    font-weight: 500;
+}
+
+
+.rightmain{
+    
+  
+  margin-left: 180px;
+  margin-top: 50px;
+
+}
+
+.upperbox{
+
+    margin-bottom: 15px;
+
+
+}
+
+.img1{
+    width: 200px;
+}
+
+.img2{
+
+    margin-left: 15px;
+    width: 210px;
+
+}
+
+
+.img3{
+    width: 430px;
+}
+
+
+/* .rightmainUp .rightmainDown {
+ padding: 10px;
+
+} */
