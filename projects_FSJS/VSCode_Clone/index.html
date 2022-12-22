@@ -6,36 +6,473 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>vscode.com</title>
+    <style>
+
+        /* .messagebox{
+            position: relative;
+            z-index: 1;
+        }
+
+        .messagebox:before{
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-color:#25252b ;
+            position: absolute;
+            top: -6px;
+            left: 100%;
+            transform: translateX(-170%) rotate(45deg);
+            z-index: 0;
+    
+            
+        } */
+
+     
+    </style>
 </head>
 <body class="max-w-full m-0 p-0 box-border">
-    <div class="main">
-        <nav class="bg-[#2c2c32] flex justify-around items-center">
+    <div class="main ">
+
+            <!-- navbar -->
+        <nav class="bg-[#2c2c32] flex justify-around items-center sticky top-0 drop-shadow-2xl">
             <!-- log and title -->
             <div class="inline-flex ">
-                <img class="w-7" src="./assets/vscodeLogo.svg.png" alt="vscodeLogo">
-                <h3 class="text-white ml-3 text-lg font-light">Visual Studio Code</h3>
+                <img class="w-7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="vscodeLogo">
+                <h3 class="text-white ml-3 text-lg font-light hover:cursor-pointer">Visual Studio Code</h3>
             <!-- </div> -->
             <!-- menue list -->
             <!-- <div class=""> -->
                 <ul class="text-[#9d9d9d] flex gap-5 ml-5 items-center">
-                    <li>Docs</li>
-                    <li>Updates</li>
-                    <li>Blogs</li>
-                    <li>API</li>
-                    <li>Extensions</li>
-                    <li>FAQ</li>
-                    <li>Learn</li>
+                    <li class="hover:text-white hover:cursor-pointer " >Docs</li>
+                    <li class="hover:text-white hover:cursor-pointer " >Updates</li>
+                    <li class="hover:text-white hover:cursor-pointer " >Blogs</li>
+                    <li class="hover:text-white hover:cursor-pointer " >API</li>
+                    <li class="hover:text-white hover:cursor-pointer " >Extensions</li>
+                    <li class="hover:text-white hover:cursor-pointer " >FAQ</li>
+                    <li class="hover:text-white hover:cursor-pointer " >Learn</li>
                 </ul>
 
             </div>
             <!-- serach and button -->
             <div class="relative flex items-center">
                 <img class="w-4 absolute left-3 pointer-events-none " src="https://code.visualstudio.com/assets/icons/search.svg" alt="">
-                <input class="h-14 w-48 mr-0 float-left bg-[#ffffff14] placeholder-white text-sm font-extralight pl-9" placeholder= "Search Docs" type="Search Docs">
-                <button class="bg-[#0066b8] text-white h-14 w-36 flex justify-center items-center gap-2"><img class="w-5" src="https://code.visualstudio.com/assets/icons/download.svg" alt="downlogo">Download</button>
+                <input class="h-[50px] w-48 mr-0 float-left bg-[#ffffff14] placeholder-white text-sm font-extralight pl-9" placeholder= "Search Docs" type="Search Docs">
+                <button class="bg-[#0066b8] text-white h-[50px] w-36 flex justify-center items-center gap-2"><img class="w-4" src="https://code.visualstudio.com/assets/icons/download.svg" alt="downlogo">Download</button>
             </div>
         </nav>
 
+
+        <!-- FIRST SECTION -->
+        <section class="bg-[#25252a] flex items-center justify-center h-11">
+            <p class="text-[#cccccc] font-light " style="font-size:15px"><a href="https://code.visualstudio.com/updates/v1_74" class="text-[#0890ef] font-light hover:underline-offset-4">Version 1.74</a> is now available! Read about the new features and fixes from November.</p>
+        </section>
+        
+        <!-- second section  -->
+        <div class="bg-[#2c2c32]  flex items-center justify-center ">
+
+            
+                <!-- side heading /left section -->
+                <div class="w-[30%]  mr-0 flex flex-col items-center gap-6 mt-[-90px]">
+                    
+                    <div class="">
+                        <h1 class="text-white text-5xl font-thin leading-[50px] text-center">Code editing. <br><strong>Redefined.</strong> </h1>
+                        <p class="text-center text-white mt-2 text-[#9d9d9d] text-lg">Free. Built on open source. Runs everywhere.</p>
+                    </div>
+                    
+                    
+                    <!-- button group -->
+                    <div class="flex gap-0.5  justify-center " >
+                        <!-- download button -->
+                        <button class="bg-[#0066b8] text-white w-[230px] h-[60px]"> <span class="font-semibold">Download Mac Universal</span> <br> Stable Build</button>
+                        <!-- drop down button -->
+                        <button class="bg-[#0066b8] text-white w-[40px] text-xl" >&or;</button>
+                    </div>
+
+
+
+                    <!-- with message box  -->
+                    <p class="bg-[#25252b] text-white text-[#cccccc] px-4 py-2 text-sm rounded-lg messagebox ">
+                        <a href="https://vscode.dev/" class="text-[#0890ef] hover:underline">Web</a> , <a href="https://code.visualstudio.com/insiders/" class="text-[#0890ef] hover:underline">Insider edition</a> , or <a href="https://code.visualstudio.com/#alt-downloads"class="text-[#0890ef] hover:underline " >other platforms</a>
+
+                    </p>
+    
+                    <!-- description -->
+                    <div><p class="text-xs text-[#9d9d9d] text-white text-center ">By using VS Code, you agree to its <br><a href="https://code.visualstudio.com/#home-terms" class="text-[#0890ef] hover:underline">license and privacy statement.</a></p></div>
+    
+                </div>
+    
+    
+    
+                <!-- Screenshot  -->
+                <div class=" w-[50%] h-[80%] my-[32px] ">
+                    <img class="w-[100%] h-[100%] " src="https://code.visualstudio.com/assets/home/home-screenshot-mac-lg-2x.png" alt="">
+                </div>
+
+            </div>
+
+
+            <!-- 4 icons -->
+            <div>
+                <p></p>
+            </div>
+
+
+            <!-- fifth section  -->
+            <section >
+                <div class="bg-white flex items-start justify-center my-20 gap-28">
+                    <img  class="mt-[6px]" src="https://code.visualstudio.com/assets/images/home-intellisense.svg" alt="intellisense">
+
+
+                    <div class="  w-[45%] my-0  flex flex-col justify-center mx-[10px] gap-8 ">
+                        <h4 class="text-3xl font-extralight ">Meet IntelliSense.</h4>
+                        <p class="font-[250]  text-[18px] leading-10">Go beyond syntax highlighting and autocomplete with IntelliSense, which <br> provides smart completions based on variable types, function definitions, and <br> imported modules.</p>
+                    </div>
+
+                </div>
+                
+
+                
+            </section>
+
+
+           
+            <!-- sixth section  -->
+            <section >
+                <div class="bg-[#f3f3f3] flex items-start justify-center py-20 gap-28">
+
+                    <div class="  w-[45%] my-0  flex flex-col justify-center mx-[10px] gap-8 ">
+                        <h4 class="text-3xl font-extralight ">Print statement debugging is a thing of the past.</h4>
+                        <p class="font-[250]  text-[18px] leading-10">Debug code right from the editor. Launch or attach to your running apps and debug with break points, call stacks, and an interactive console.</p>
+                    </div>
+
+                    <img  class="mt-[6px]" src=" https://code.visualstudio.com/assets/images/home-debug.svg" alt="intellisense">
+
+                </div>
+                
+
+                
+            </section>    
+
+
+            <!-- sevevnth section  -->
+
+            <section >
+                <div class="bg-white flex items-start justify-center my-20 gap-28">
+                    <img  class="mt-[6px]" src="https://code.visualstudio.com/assets/images/home-git.svg" alt="intellisense">
+
+
+                    <div class="  w-[45%] my-0  flex flex-col justify-center mx-[10px] gap-8 ">
+                        <h4 class="text-3xl font-extralight  ">Git commands built-in.</h4>
+                        <p class="font-[250]  text-[18px] leading-10">Working with Git and other SCM providers has never been easier. Review diffs, stage files, and make commits right from the editor. Push and pull from any hosted SCM service.</p>
+                    </div>
+
+                </div>
+                
+
+                
+            </section>
+
+
+
+
+            <!-- eight section  -->
+            <section >
+                <div class="bg-[#f3f3f3] flex items-start justify-center py-20 gap-28">
+
+                    <div class="  w-[45%] my-0  flex flex-col justify-center mx-[10px] gap-8 ">
+                        <h4 class="text-3xl font-extralight ">Extensible and customizable.</h4>
+                        <p class="font-[250]  text-[18px] leading-10">Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate processes, ensuring they won't slow down your editor. <a href="https://code.visualstudio.com/docs/editor/extension-marketplace" class="text-[#0890ef] hover:underline">Learn more about extensions.</a></p>
+                    </div>
+
+                    <div class="w-[400px]">
+                        <img  class=" w-[350px] hover:w-[360px]" src="https://code.visualstudio.com/assets/images/Hundreds-of-Extensions.png" alt="intellisense">
+
+                    </div>
+                    
+
+                </div>
+                
+
+                
+            </section>  
+
+
+            <!-- ninth section  -->
+
+            <section >
+                <div class="bg-white flex items-start justify-center my-20 gap-28">
+                    <img  class="mt-[6px]" src="https://code.visualstudio.com/assets/images/home-azure.svg" alt="intellisense">
+
+
+                    <div class="  w-[45%] my-0  flex flex-col justify-center mx-[10px] gap-8 ">
+                        <h4 class="text-3xl font-extralight  ">Deploy with confidence and ease</h4>
+                        <p class="font-[250]  text-[18px] leading-10">With Microsoft Azure you can deploy and host your React, Angular, Vue, Node, Python (and more!) sites, store and query relational and document based data, and scale with serverless computing, all with ease, all from within VS Code.</p>
+                    </div>
+
+                </div>
+                
+
+                
+            </section>
+
+            <!-- tenth section  -->
+
+            <section class="bg-[#F5F5F5] flex flex-col items-center justify-center px-16 py-16">
+                <h2 class="text-[30px] mb-8 text-slate-600 font-extralight">VS Code for</h2>
+
+                <div class="grid grid-rows-2 grid-cols-6 gap-x-12 gap-y-6">
+                    <div class="flex items-center">
+                        <img src="https://code.visualstudio.com/assets/icons/file-icons/javascript.svg" class="w-[30px]" alt="JS">
+                        <p>Java Script</p>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <img src="https://code.visualstudio.com/assets/icons/file-icons/python.svg" alt="Python classw-[30px]">
+                        <p>Python</p>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <img src="https://code.visualstudio.com/assets/icons/file-icons/java.svg" alt="java" class="w-[30px]">
+                        <p>Java</p>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <img src="https://code.visualstudio.com/assets/icons/file-icons/markdown.svg" alt="markdown" class="w-[30px]">
+                        <p>Markdown</p>
+                    </div>
+                    
+                    <div class="flex">
+                        <img src="https://code.visualstudio.com/assets/icons/file-icons/typescript.svg" alt="typescript" class="w-[30px]">
+                        <p>TypeScript</p>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <img src="https://code.visualstudio.com/assets/icons/file-icons/cpp.svg" alt="cplusplus" class="w-[30px]">
+                        <p>C/C++</p>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <img src="https://code.visualstudio.com/assets/icons/file-icons/json.svg" alt="json" class="w-[30px]">
+                        <p>JSON</p>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <img src="https://code.visualstudio.com/assets/icons/file-icons/powershell.svg" alt="powershell" class="w-[30px]">
+                        <p>Powershell</p>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <img src="https://code.visualstudio.com/assets/icons/file-icons/html.svg" alt="htmlcss" class="w-[30px]">
+                        <p>HTML/CSS</p>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <img src="https://code.visualstudio.com/assets/icons/file-icons/csharp.svg" alt="csharp" class="w-[30px]">
+                        <p>C#</p>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <img src="https://code.visualstudio.com/assets/icons/file-icons/php.svg" alt="php" class="w-[30px]">
+                        <p>PHP</p>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <img src="https://code.visualstudio.com/assets/icons/file-icons/yaml.svg" alt="yaml" class="w-[30px]">
+                        <p>YAML</p>
+                    </div>
+                </div>
+
+                <h4 class="text-[#0071bc] text-[18px] mt-6 curser-pointer hover:underline"><a href="https://marketplace.visualstudio.com/search?target=VSCode&category=Programming%20Languages&sortBy=Installs">and many more languages on the Marketplace...</a></h4>
+
+                <button class="px-8 py-4 bg-[#0066b8] text-[19px] text-white font-semibold mt-12 hover:bg-[#025aa1]">Get Started Now</button>
+
+
+            </section>
+
+            <!-- eleventh section  -->
+
+            <section class="">
+
+                <div class="flex justify-center items-center gap-[100px] my-20">
+
+                    <!-- windowss download options -->
+                    <div class="flex flex-col items-center gap-6">
+
+                        <!-- windows logo -->
+                        <div>
+                            <img class="w-24" src="https://code.visualstudio.com/assets/images/windows-logo.png" alt="microsoft">
+                        </div>
+                        
+                        <!-- win download main button -->
+                        <div>
+                            <button class="bg-[#0066b8] text-white  flex flex-col items-center justify-center py-3 px-16">
+                            
+                                <p class="flex "><img class="w-4" src="https://code.visualstudio.com/assets/icons/download.svg" alt="downlogo">Windows </p>
+                                <p class="text-[12px]">windows 8,10,11</p>
+                            
+                            
+                            </button>
+                        </div>
+
+                        <!-- installer buttons  -->
+
+                        <div class="grid grid-cols-2 grid-rows-4 grid-flow-col gap-x-2 place-items-center">
+
+                            <span class="font-[440] text-slate-600">User Installer</span>
+                            <span class="font-[440] text-slate-600">System Installer</span>
+                            <span class="font-[440] text-slate-600 ">.zip</span>
+                            <span class="font-[440] text-slate-600">CLI</span>
+
+                            <div class="flex justify-center items-center gap-x-1">
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+                            </div>
+                            <div class="flex justify-center items-center gap-x-1">
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+                            </div>
+                            <div class="flex justify-center items-center gap-x-1">
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+                            </div>
+                            <div class="flex justify-center items-center gap-x-1">
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+                            </div>
+                
+                        </div>
+
+
+
+                      
+                    </div>
+    
+                    <!-- linux download options  -->
+                    <div class="flex flex-col items-center gap-4">
+                        
+                        <!-- linux logo  -->
+                        <div class="w-[90px]"> <img src="https://code.visualstudio.com/assets/images/linux-logo.png" alt="linux"></div>
+
+                        <!-- linux download main button -->
+                        <div class="flex gap-1 ">
+                            <!-- button one -->
+                            <button class="bg-[#0066b8] text-white  flex flex-col items-center justify-center py-3 px-8">
+                            
+                                <p class="flex"><img class="w-4" src="https://code.visualstudio.com/assets/icons/download.svg" alt="downlogo">.deb </p>
+                                <p class="text-sm"><small>Debian, ubuntu</small></p>
+                            
+                            
+                            </button>
+
+                            <!-- button 2 -->
+                            <button class="bg-[#0066b8] text-white  flex flex-col items-center justify-center py-3 px-4">
+                            
+                                <p class="flex "><img class="w-4" src="https://code.visualstudio.com/assets/icons/download.svg" alt="downlogo">.rpm </p>
+                                <p class="text-sm"><small>RedHat, Fedora, SUSE</small></p>
+                            
+                            
+                            </button>
+
+                        </div>
+
+                        <!-- linux installer buttons  -->
+
+                        <div class="grid grid-cols-2 grid-rows-5 grid-flow-col gap-x-2 place-items-center">
+
+                            <span class="font-[440] text-slate-600">.deb</span>
+                            <span class="font-[440] text-slate-600">.rpm</span>
+                            <span class="font-[440] text-slate-600 ">.tar.gz</span>
+                            <span class="font-[440] text-slate-600 ">Snap</span>
+                            <span class="font-[440] text-slate-600">CLI</span>
+
+                            <div class="flex justify-center items-center gap-x-1">
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+                            </div>
+                            <div class="flex justify-center items-center gap-x-1">
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+                            </div>
+                            <div class="flex justify-center items-center gap-x-1">
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+                            </div>
+
+                            <div class="w-[95px]">
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Snap Store</button>
+                            </div>
+
+
+                            <div class="flex justify-center items-center gap-x-1">
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+                            </div>
+                
+                        </div>
+                       
+                    </div>
+
+                    <!-- mac download options -->
+                    <div class="flex flex-col items-center gap-6">
+
+                        <!-- mac logo -->
+                        <div>
+                            <img class="w-20" src="https://code.visualstudio.com/assets/images/apple-logo.svg" alt="microsoft">
+                        </div>
+                        
+                        <!-- mac download main button -->
+                        <div>
+                            <button class="bg-[#0066b8] text-white  flex flex-col items-center justify-center py-3 px-20">
+                            
+                                <p class="flex "><img class="w-4" src="https://code.visualstudio.com/assets/icons/download.svg" alt="downlogo">Mac</p>
+                                <p class="text-[12px]">macOS 10.11+</p>
+                            
+                            
+                            </button>
+                        </div>
+
+                        <!-- installer buttons  -->
+
+                        <div class="grid grid-cols-4 grid-rows-2 grid-flow-col gap-x-2 gap-y-3 place-items-center ">
+
+                            <div class=" col-span-1"><span class="font-[440] text-slate-600">.zip</span></div> 
+                            <div class=" col-span-1"><span class="font-[440] text-slate-600">CLI</span></div>
+
+                            <div class="col-span-3 flex justify-start items-center gap-x-1">
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Intel Chip</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Apple silicon</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Universal</button>
+                            </div>
+                            <div class="col-span-3 flex justify-start items-center gap-x-1">
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Intel Chip</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Apple silicon</button>
+
+                            </div>
+
+                
+                        </div>
+
+
+
+                      
+                    </div>
+
+
+                </div>
+                
+
+            </section>
+
+
+            
     </div>
 </body>
 </html>
