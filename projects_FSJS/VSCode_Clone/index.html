@@ -111,9 +111,25 @@
             </div>
 
 
-            <!-- 4 icons -->
-            <div>
-                <p></p>
+           
+            <!-- Services -->
+            <div class="flex item-center justify-center gap-[50px]">
+                <div class="px-[15px] py-5 hover:bg-[#e3e3e3] cursor-pointer  w-[200px] ">
+                    <img class = "w-8 mx-auto" src="./assets/bulb-grey.svg" alt="bulb-grey">
+                    <p class="text-lg text-center mt-2">IntelliSense</p>
+                </div>
+                <div class="px-[15px] py-5 hover:bg-[#e3e3e3] hover:bg-[#e3e3e3] cursor-pointer w-[200px] ">
+                    <img class = "w-11 mx-auto" src="./assets/debug-grey.svg" alt="debug-grey">
+                    <p class="text-lg text-center mt-2">Run and Debug</p>
+                </div>
+                <div class="px-[15px] py-5 hover:bg-[#e3e3e3] hover:bg-[#e3e3e3] cursor-pointer w-[200px] ">
+                    <img class = "w-8 mx-auto" src="./assets/git-grey.svg" alt="git-grey">
+                    <p class="text-lg text-center mt-2">Built-in Git</p>
+                </div>
+                <div class="px-[15px] py-5 hover:bg-[#e3e3e3] hover:bg-[#e3e3e3] cursor-pointer w-[200px] ">
+                    <img class = "w-11 mx-auto" src="./assets/ext-grey.svg" alt="ext-grey">
+                    <p class="text-lg text-center mt-2">Extensions</p>
+                </div>
             </div>
 
 
@@ -293,7 +309,7 @@
 
             <section class="">
 
-                <div class="flex justify-center items-center gap-[100px] my-20">
+                <div class="flex justify-center items-start gap-[100px] my-20">
 
                     <!-- windowss download options -->
                     <div class="flex flex-col items-center gap-6">
@@ -316,12 +332,12 @@
 
                         <!-- installer buttons  -->
 
-                        <div class="grid grid-cols-2 grid-rows-4 grid-flow-col gap-x-2 place-items-center">
+                        <div class="grid grid-cols-2 grid-rows-5 grid-flow-col gap-x-2 place-items-center">
 
                             <span class="font-[440] text-slate-600">User Installer</span>
                             <span class="font-[440] text-slate-600">System Installer</span>
                             <span class="font-[440] text-slate-600 ">.zip</span>
-                            <span class="font-[440] text-slate-600">CLI</span>
+                            <span class="font-[440] text-slate-600 row-span-2 self-center">CLI</span>
 
                             <div class="flex justify-center items-center gap-x-1">
                                 <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
@@ -338,11 +354,16 @@
                                 <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
                                 <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
                             </div>
-                            <div class="flex justify-center items-center gap-x-1">
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+
+                            <div class="row-span-2 self-center">
+                                <div class="flex justify-center items-center gap-x-1">
+                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
+                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
+                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+                                </div>
+
                             </div>
+                            
                 
                         </div>
 
@@ -352,7 +373,7 @@
                     </div>
     
                     <!-- linux download options  -->
-                    <div class="flex flex-col items-center gap-4">
+                    <div class="flex flex-col items-center gap-4 mt-[-3px]">
                         
                         <!-- linux logo  -->
                         <div class="w-[90px]"> <img src="https://code.visualstudio.com/assets/images/linux-logo.png" alt="linux"></div>
@@ -381,13 +402,13 @@
 
                         <!-- linux installer buttons  -->
 
-                        <div class="grid grid-cols-2 grid-rows-5 grid-flow-col gap-x-2 place-items-center">
+                        <div class="grid grid-cols-2 grid-rows-6 grid-flow-col gap-x-2 place-items-center">
 
                             <span class="font-[440] text-slate-600">.deb</span>
                             <span class="font-[440] text-slate-600">.rpm</span>
                             <span class="font-[440] text-slate-600 ">.tar.gz</span>
                             <span class="font-[440] text-slate-600 ">Snap</span>
-                            <span class="font-[440] text-slate-600">CLI</span>
+                            <span class="font-[440] text-slate-600 self-center row-span-2">CLI</span>
 
                             <div class="flex justify-center items-center gap-x-1">
                                 <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
@@ -410,11 +431,15 @@
                             </div>
 
 
-                            <div class="flex justify-center items-center gap-x-1">
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+                            <div class="row-span-2 self-center">
+                                <div class="flex justify-center items-center gap-x-1">
+                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
+                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
+                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+                                </div>
+
                             </div>
+                            
                 
                         </div>
                        
@@ -451,10 +476,14 @@
                                 <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Apple silicon</button>
                                 <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Universal</button>
                             </div>
-                            <div class="col-span-3 flex justify-start items-center gap-x-1">
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Intel Chip</button>
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Apple silicon</button>
+                            <div class="col-span-3 ">
+                                <div class="w-[185px] flex justify-start items-center gap-x-1">
+                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Intel Chip</button>
+                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Apple silicon</button>
 
+
+                                </div>
+                                
                             </div>
 
                 
@@ -470,6 +499,65 @@
                 
 
             </section>
+
+            <!-- lincensing section  -->
+            <section class="bg-[#f5f5f5]" >
+                
+                <div class="grid grid-rows-2 grid-cols-2 gap-2 place-items-center w-[68%] mx-auto py-10 gap-y-16">
+
+                    <div class="text-center">
+                        <h2 class="text-gray-700 font-medium text-[21px] self-end">Want new features sooner?</h2>
+                           <p class="text-[#2c2c32] text-lg mt-3">Get the <a href="https://code.visualstudio.com/insiders/" class="text-sky-600 hover:underline">Insiders build</a> instead.</p>
+                    </div>
+    
+                    <div class="text-center">
+                        <h2 class="text-gray-700 font-medium text-[21px] px-[80px] leading-6">Use <a href="https://vscode.dev/" class="text-sky-700 hover:underline">vscode.dev</a> for quick edits  online!</h2>
+                        <p class="text-[#2c2c32] text-lg mt-3">GitHub, Azure Repos, and local files.</p>
+                    </div>
+    
+    
+                    <div class="grid col-span-2 justify-self-center">
+                        <div class="px-[120px] flex flex-col items-center">
+                            <h2 class="text-gray-500 text-xs font-medium ">LICENSE AND PRIVACY TERMS</h2>
+                            <p class="text-gray-500 leading-[3] text-sm mt-3 text-center">By downloading and using Visual Studio Code, you agree to the  <a href="https://code.visualstudio.com/License/" class="text-sky-600 hover:underline">license terms</a> and <a href="https://privacy.microsoft.com/en-US/privacystatement" class="text-sky-600 hover:underline">privacy statement.</a> VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see <a href="https://code.visualstudio.com/docs/supporting/FAQ#_how-to-disable-crash-reporting" class="text-sky-600 hover:underline"> How to Disable Crash Reporting</a> to learn how to disable it.</p>
+                        </div>
+                        
+                    </div>
+
+
+                </div>
+            
+            
+        </section>
+
+
+        <!-- footer  -->
+        <footer>
+            <section class="flex justify-evenly bg-[#2c2c32] items-center h-[94px]">
+                <div class="">
+                    <ul class="flex gap-5 text-white text-[14.4px] ">
+                        <li><span>Hello from Seattle.</span></li>
+                        <li><span>Follow @code</span></li>
+                        <li><button class="bg-[#f5f5f5] text-[#2c2c32] text-[11.5px] font-bold px-1.5 py-0.5  rounded"><img class="w-3.5 inline mt-[-3px] mr-1" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="githubLogo"> Star</button> <button class="bg-[#f5f5f5] text-[#2c2c32] text-[11.5px] font-bold px-1.5 py-[2.1px] ml-0.5 rounded">140,586</button></li>
+                    </ul>
+                   
+                </div>
+
+                <div>
+                    <ul class="flex gap-6 text-white  text-xs ">
+                        <li><span>Support</span></li>
+                        <li><span>Privacy</span></li>
+                        <li><span>Terms of Use</span></li>
+                        <li><span>License</span></li>
+                        <div class="ml-[15px]">
+                            <img class="w-[94px] inline " src="https://code.visualstudio.com/assets/images/microsoft-logo.png" alt="Microsoft_logo">
+                            <p class="text-[15px]"><small>© 2022 Microsoft</small></p>
+
+                        </div>
+                    </ul>
+                </div>
+            </section>
+        </footer>
 
 
             
