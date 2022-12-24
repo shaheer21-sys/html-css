@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/vscodeLogo.svg.png" type="image/x-icon">
+    <!-- <script src="https://kit.fontawesome.com/f8db6cb05a.js" crossorigin="anonymous"></script> -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>vscode.com</title>
+    <title>vscode_CLONE</title>
     <style>
 
         /* .messagebox{
@@ -57,14 +59,26 @@
             <div class="relative flex items-center">
                 <img class="w-4 absolute left-3 pointer-events-none " src="https://code.visualstudio.com/assets/icons/search.svg" alt="">
                 <input class="h-[50px] w-48 mr-0 float-left bg-[#ffffff14] placeholder-white text-sm font-extralight pl-9" placeholder= "Search Docs" type="Search Docs">
-                <button class="bg-[#0066b8] text-white h-[50px] w-36 flex justify-center items-center gap-2"><img class="w-4" src="https://code.visualstudio.com/assets/icons/download.svg" alt="downlogo">Download</button>
+                <button class="bg-[#0066b8] text-white h-[50px] w-36 flex justify-center items-center gap-2 hover:bg-[#025aa1]"><img class="w-4" src="https://code.visualstudio.com/assets/icons/download.svg" alt="downlogo">Download</button>
             </div>
         </nav>
 
 
         <!-- FIRST SECTION -->
-        <section class="bg-[#25252a] flex items-center justify-center h-11">
-            <p class="text-[#cccccc] font-light " style="font-size:15px"><a href="https://code.visualstudio.com/updates/v1_74" class="text-[#0890ef] font-light hover:underline-offset-4">Version 1.74</a> is now available! Read about the new features and fixes from November.</p>
+        <section class="bg-[#25252a] flex items-center justify-center h-11 gap-2">
+            <p class="text-[#cccccc] font-light " style="font-size:15px">For <a href="https://code.visualstudio.com/updates/v1_74" class="text-[#0890ef] font-light hover:underline-offset-4">Education</a> Purpose Only!</p>
+            <div class="flex items-center gap-2">
+
+                <p class="text-[#cccccc] font-light  " style="font-size:15px">Check out</p>
+                <a  class="" href="https://github.com/shaheer21-sys/html-css/tree/master/projects_FSJS/VSCode_Clone"><img class="w-4" src="https://static-00.iconduck.com/assets.00/github-icon-256x249-eb1fu3cu.png" alt=""></a>
+                <a  class="" href="https://www.linkedin.com/in/sha21b/"><img class="w-4 " src="https://png.pngtree.com/png-clipart/20190613/original/pngtree-linked-in-icon-png-image_3584840.jpg" alt=""></a>
+
+                
+
+                
+
+            </div>
+            
         </section>
         
         <!-- second section  -->
@@ -83,9 +97,9 @@
                     <!-- button group -->
                     <div class="flex gap-0.5  justify-center " >
                         <!-- download button -->
-                        <button class="bg-[#0066b8] text-white w-[230px] h-[60px]"> <span class="font-semibold">Download Mac Universal</span> <br> Stable Build</button>
+                        <button class="bg-[#0066b8] text-white w-[230px] h-[60px] hover:bg-[#025aa1]"> <span class="font-semibold">Download Mac Universal</span> <br> Stable Build</button>
                         <!-- drop down button -->
-                        <button class="bg-[#0066b8] text-white w-[40px] text-xl" >&or;</button>
+                        <button class="bg-[#0066b8] text-white w-[40px] text-xl hover:bg-[#025aa1]" >&or;</button>
                     </div>
 
 
@@ -113,24 +127,87 @@
 
            
             <!-- Services -->
-            <div class="flex item-center justify-center gap-[50px]">
-                <div class="px-[15px] py-5 hover:bg-[#e3e3e3] cursor-pointer  w-[200px] ">
-                    <img class = "w-8 mx-auto" src="./assets/bulb-grey.svg" alt="bulb-grey">
-                    <p class="text-lg text-center mt-2">IntelliSense</p>
+            <section>
+                <div class="flex item-center justify-center gap-[30px]">
+                    <div class="px-[15px] py-6 hover:bg-[#e3e3e3] cursor-pointer  w-[250px]  ">
+                        <img class = "w-8 mx-auto" src="./assets/bulb-grey.svg" alt="bulb-grey">
+                        <p class="text-lg text-center mt-2">IntelliSense</p>
+                    </div>
+                    <div class="px-[15px] py-6 hover:bg-[#e3e3e3]  cursor-pointer w-[250px] ">
+                        <img class = "w-11 mx-auto" src="./assets/debug-grey.svg" alt="debug-grey">
+                        <p class="text-lg text-center mt-2">Run and Debug</p>
+                    </div>
+                    <div class="px-[15px] py-6 hover:bg-[#e3e3e3]  cursor-pointer w-[250px] ">
+                        <img class = "w-8 mx-auto" src="./assets/git-grey.svg" alt="git-grey">
+                        <p class="text-lg text-center mt-2">Built-in Git</p>
+                    </div>
+                    <div class="px-[15px] py-6 hover:bg-[#e3e3e3]  cursor-pointer w-[250px] ">
+                        <img class = "w-11 mx-auto" src="./assets/ext-grey.svg" alt="ext-grey">
+                        <p class="text-lg text-center mt-2">Extensions</p>
+                    </div>
                 </div>
-                <div class="px-[15px] py-5 hover:bg-[#e3e3e3] hover:bg-[#e3e3e3] cursor-pointer w-[200px] ">
-                    <img class = "w-11 mx-auto" src="./assets/debug-grey.svg" alt="debug-grey">
-                    <p class="text-lg text-center mt-2">Run and Debug</p>
+
+            </section>
+            
+
+
+            <!-- fourth section / feedback  -->
+            <section>
+                <div class="flex bg-[#f3f3f3] py-[90px] justify-center item-center gap-2">
+                    <img class="w-4 mr-3" src="./assets/Cheron_left.svg" alt="left">
+                    <!-- first feedback -->
+                    <div class="px-2 flex gap-2 ">
+                        <div class="w-[80px]">
+                            <img src="./assets/P_1.jpg" alt="profile picture" class="w-[70px] h-[70px]  rounded-full">
+                        </div>
+                        <div class="w-[275px]">
+                            <div class="flex justify-between">
+                                <h2 class="font-bold text-sm">Shaheer <span class="text-xs font-extralight">@shaheer</span></h2>
+                                <img class="w-4 opacity-30 " src="./assets/twitter.svg" alt="twitter"></div>
+                            <p class="text-[16px] font-[245] text-slate-600">
+                                VS Code will have deep remote development. You can connect to a container running a different OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- second feedback -->
+                    <div class="px-2 flex gap-2 ">
+                        <div class="w-[80px]">
+                            <img src="./assets/P_2.jpg" alt="profile picture" class="w-[70px] h-[70px]  rounded-full">
+                        </div>
+                        <div class="w-[275px]">
+                            <div class="flex justify-between">
+                                <h2 class="font-bold text-sm">Shaheer <span class="text-xs font-extralight">@shaheer</span></h2>
+                                <img class="w-4 opacity-30 " src="./assets/twitter.svg" alt="twitter"></div>
+                            
+                            <p class="text-[16px] font-[245] text-slate-600">
+                                Just as I thought @code couldn't get better, out comes its Remote Development plugins that let you remote into containers as a dev environment! 😍
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- third feedback  -->
+                    <div class="px-2 flex gap-2 ">
+                        <div class="w-[80px]">
+                            <img src="./assets/P_3.jpg" alt="profile picture" class="w-[70px] h-[70px]  rounded-full">
+                        </div>
+                        <div class="w-[275px]">
+                            <div class="flex justify-between">
+                                <h2 class="font-bold text-sm">Shaheer <span class="text-xs font-extralight">@shaheer</span></h2>
+                                <img class="w-4 opacity-30 " src="./assets/twitter.svg" alt="twitter"></div>
+                            <p class="text-[16px] font-[245] text-slate-600">
+                                I was a vim fan, but then discovered VS Code's Vim plugin, which lets me add in my vim keybindings. I can maintain my coding style without having to compromise on speed.
+                            </p>
+                        </div>
+                    </div>
+
+                    <img class="w-4 ml-3" src="./assets/Cheron_right.svg" alt="right">
+
+
+
+
                 </div>
-                <div class="px-[15px] py-5 hover:bg-[#e3e3e3] hover:bg-[#e3e3e3] cursor-pointer w-[200px] ">
-                    <img class = "w-8 mx-auto" src="./assets/git-grey.svg" alt="git-grey">
-                    <p class="text-lg text-center mt-2">Built-in Git</p>
-                </div>
-                <div class="px-[15px] py-5 hover:bg-[#e3e3e3] hover:bg-[#e3e3e3] cursor-pointer w-[200px] ">
-                    <img class = "w-11 mx-auto" src="./assets/ext-grey.svg" alt="ext-grey">
-                    <p class="text-lg text-center mt-2">Extensions</p>
-                </div>
-            </div>
+            </section>
 
 
             <!-- fifth section  -->
@@ -321,7 +398,7 @@
                         
                         <!-- win download main button -->
                         <div>
-                            <button class="bg-[#0066b8] text-white  flex flex-col items-center justify-center py-3 px-16">
+                            <button class="bg-[#0066b8] text-white  flex flex-col items-center justify-center py-3 px-16 hover:bg-[#025aa1]">
                             
                                 <p class="flex "><img class="w-4" src="https://code.visualstudio.com/assets/icons/download.svg" alt="downlogo">Windows </p>
                                 <p class="text-[12px]">windows 8,10,11</p>
@@ -340,26 +417,26 @@
                             <span class="font-[440] text-slate-600 row-span-2 self-center">CLI</span>
 
                             <div class="flex justify-center items-center gap-x-1">
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">x64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">x84</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">Arm64</button>
                             </div>
                             <div class="flex justify-center items-center gap-x-1">
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">x64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">x84</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">Arm64</button>
                             </div>
                             <div class="flex justify-center items-center gap-x-1">
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">x64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">x84</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">Arm64</button>
                             </div>
 
                             <div class="row-span-2 self-center">
                                 <div class="flex justify-center items-center gap-x-1">
-                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
-                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
-                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">x64</button>
+                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">x84</button>
+                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">Arm64</button>
                                 </div>
 
                             </div>
@@ -381,7 +458,7 @@
                         <!-- linux download main button -->
                         <div class="flex gap-1 ">
                             <!-- button one -->
-                            <button class="bg-[#0066b8] text-white  flex flex-col items-center justify-center py-3 px-8">
+                            <button class="bg-[#0066b8] text-white  flex flex-col items-center justify-center py-3 px-8 hover:bg-[#025aa1]">
                             
                                 <p class="flex"><img class="w-4" src="https://code.visualstudio.com/assets/icons/download.svg" alt="downlogo">.deb </p>
                                 <p class="text-sm"><small>Debian, ubuntu</small></p>
@@ -390,7 +467,7 @@
                             </button>
 
                             <!-- button 2 -->
-                            <button class="bg-[#0066b8] text-white  flex flex-col items-center justify-center py-3 px-4">
+                            <button class="bg-[#0066b8] text-white  flex flex-col items-center justify-center py-3 px-4 hover:bg-[#025aa1]">
                             
                                 <p class="flex "><img class="w-4" src="https://code.visualstudio.com/assets/icons/download.svg" alt="downlogo">.rpm </p>
                                 <p class="text-sm"><small>RedHat, Fedora, SUSE</small></p>
@@ -411,31 +488,31 @@
                             <span class="font-[440] text-slate-600 self-center row-span-2">CLI</span>
 
                             <div class="flex justify-center items-center gap-x-1">
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">x64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">x84</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">Arm64</button>
                             </div>
                             <div class="flex justify-center items-center gap-x-1">
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">x64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">x84</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">Arm64</button>
                             </div>
                             <div class="flex justify-center items-center gap-x-1">
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">x64</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">x84</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">Arm64</button>
                             </div>
 
                             <div class="w-[95px]">
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Snap Store</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">Snap Store</button>
                             </div>
 
 
                             <div class="row-span-2 self-center">
                                 <div class="flex justify-center items-center gap-x-1">
-                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x64</button>
-                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">x84</button>
-                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Arm64</button>
+                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">x64</button>
+                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">x84</button>
+                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">Arm64</button>
                                 </div>
 
                             </div>
@@ -455,7 +532,7 @@
                         
                         <!-- mac download main button -->
                         <div>
-                            <button class="bg-[#0066b8] text-white  flex flex-col items-center justify-center py-3 px-20">
+                            <button class="bg-[#0066b8] text-white  flex flex-col items-center justify-center py-3 px-20 hover:bg-[#025aa1]">
                             
                                 <p class="flex "><img class="w-4" src="https://code.visualstudio.com/assets/icons/download.svg" alt="downlogo">Mac</p>
                                 <p class="text-[12px]">macOS 10.11+</p>
@@ -472,14 +549,14 @@
                             <div class=" col-span-1"><span class="font-[440] text-slate-600">CLI</span></div>
 
                             <div class="col-span-3 flex justify-start items-center gap-x-1">
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Intel Chip</button>
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Apple silicon</button>
-                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Universal</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">Intel Chip</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">Apple silicon</button>
+                                <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">Universal</button>
                             </div>
                             <div class="col-span-3 ">
                                 <div class="w-[185px] flex justify-start items-center gap-x-1">
-                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Intel Chip</button>
-                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px]">Apple silicon</button>
+                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">Intel Chip</button>
+                                    <button class="bg-[#0066B8] px-0.5 h-5 text-[11px] font-light text-white rounded-[2px] hover:bg-[#025aa1]">Apple silicon</button>
 
 
                                 </div>
