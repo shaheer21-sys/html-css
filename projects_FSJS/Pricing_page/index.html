@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="main.css">
+    <title>Responsive pricig page</title>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <div class="head"><h1>PRICING PAGE</h1></div>
+            
+        </header>
+
+        <div class="top">
+            <div class="toggle-btn">
+                <span style="margin: 0.8rem;">Anually</span>
+                <label class="switch">
+                    <input type="checkbox"  id="checkbox" onclick="check()" >
+                    <span class="slider round"></span>
+                </label>
+                <span style="margin: 0.8rem;">Monthly</span>
+            </div>
+        </div>
+        <div class="package-container">
+            <div class="packages">
+                <h1 class="first">Basic</h1>
+                <h2 class="text1">&dollar;09.99 </h2>
+                <h2 class="text2">&dollar;139.99</h2>
+                <ul class="list">
+                    <li><span class="material-symbols-outlined">
+                        check
+                        </span>Basic</li>
+                    <li><span class="material-symbols-outlined">
+                        check
+                        </span>Landing pages</li>
+                    <li><span class="material-symbols-outlined cross">
+                        close
+                        </span>Pop-ups Forums</li>
+                    <li><span class="material-symbols-outlined cross">
+                        close
+                        </span>Premium Support</li>
+                </ul>
+                <a href="#" class="button">Start Now</a>
+            </div>
+
+            <div class="packages">
+                <h1 class="first">Professional</h1>
+                <h2 class="text1">&dollar;29.99</h2>
+                <h2 class="text2">&dollar;239.99</h2>
+                <ul class="list">
+                    <li><span class="material-symbols-outlined">
+                        check
+                        </span>Basic</li>
+                    <li><span class="material-symbols-outlined">
+                        check
+                        </span>Landing pages</li>
+                    <li><span class="material-symbols-outlined">
+                        check
+                        </span>Pop-ups Forums</li>
+                    <li><span class="material-symbols-outlined">
+                        check
+                        </span>Premium Support</li>
+                </ul>
+                <a href="#" class="button">Start Now</a>
+            </div>
+
+            <div class="packages">
+                <h1 class="first">standard</h1>
+                <h2 class="text1">&dollar;19.99</h2>
+                <h2 class="text2">&dollar;199.99</h2>
+                <ul class="list">
+                    <li><span class="material-symbols-outlined">
+                        check
+                        </span>Basic</li>
+                    <li><span class="material-symbols-outlined">
+                        check
+                        </span>Landing pages</li>
+                    <li><span class="material-symbols-outlined">
+                        check
+                        </span>Pop-ups Forums</li>
+                    <li><span class="material-symbols-outlined cross">
+                        close
+                        </span>Premium Support</li>
+                </ul>
+                <a href="#" class="button">Start Now</a>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    
+
+
+    <script>
+        function check(){
+            var checkBox = document.getElementById("checkbox");
+            var text1 = document.getElementsByClassName("text1");
+            var text2 = document.getElementsByClassName("text2");
+
+
+            for (var i=0 ; i < text1.length; i++){
+                if(checkBox.checked == true){
+                    text1[i].style.display ="block";
+                    text2[i].style.display ="none";
+                }
+
+                else if(checkBox.checked == false){
+                    text1[i].style.display = "none";
+                    text2[i].style.display = "block";
+                }
+            }
+
+        }
+
+        check();
+    </script>
+</body>
+</html>

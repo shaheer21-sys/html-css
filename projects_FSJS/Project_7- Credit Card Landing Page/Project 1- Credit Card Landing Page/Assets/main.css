@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    
+    
+    overflow-x: hidden;
+    background-color:#151515;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+
+
+}
+
+
+
+/* *********************************** header and nav **************************************/
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+
+.right-side-items ul>li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    color: #d1cfcf;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+nav img{
+    width: 8rem;
+    cursor: pointer;
+}
+
+#contact{
+    position: relative;
+    z-index: 2;
+}
+
+#contact::before{
+    content: "";
+    background-image: url("./Icons/btn-pink-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -1.4rem;
+    z-index: -1;
+    height: 2rem;
+    width: 5rem;
+    opacity: 0.8;
+
+}
+
+
+
+
+
+/************************************ hero section ************************************/
+
+/* hero left  */
+.hero-left-section{
+    margin: 3rem 0 5rem 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    max-width: 75%;
+    position: relative;
+
+
+}
+
+.hero-left-section h1{
+    font-family:  "Manrope", sans-serif;
+    font-size: 4.7rem;
+    font-weight: 500;
+}
+
+.hero-left-section h1 span{
+    color: #f637ec;
+}
+
+.left-upper-text > p{
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    max-width:60%;
+    /* padding-right: 18rem; */
+    color: #d1cfcf;
+
+}
+
+.get-started{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-left: 1.2rem;
+}
+
+.get-started h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+    word-spacing: 0.8rem;
+
+}
+
+.get-started > h2::before{
+    content: "";
+    position: absolute;
+    top: -0.1rem;
+    left: -1rem;
+    background-image: url("./Icons/btn-pink-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 4rem;
+    height: 2rem;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+
+
+.info-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+
+.info{
+    display: flex;
+    /* align-items: flex-start; */
+    gap: 1em;
+    margin-bottom: 2rem;
+}
+
+.info > h2{
+    font-size: 3rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.info > h2 > i {
+    font-size: 2rem;
+    color: #cd2eca;
+  }
+  
+  .info-text{
+    font-size: 1.5rem;
+    color: #d1cfcf;
+
+  }
+
+  .hero-right-section > img {
+    position: absolute;
+    width: 50%;
+  }
+
+  .front-cards{
+    top: 6.2rem;
+    right: -5rem;
+  }
+
+  .back-cards{
+    top: 2rem;
+    right: 0rem;
+  }
+
+
+  .logos{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    background-color: #292929;
+    width: 100%;
+    padding: 5rem 5rem;
+
+  }
+
+  .logos img{
+    width: 8rem;
+  }
+
+
+
+  /* service details  */
+
+  .service-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 7rem;
+
+  }
+
+
+  .service-details > h2{
+    font-size: 4.7rem;
+    font-weight: 500;
+    width: 150rem;
+
+  }
+
+  .service-details > h2 >span {
+    color: #cd2eca;
+  }
+
+  .service-details p{
+    font-size: 1.3rem;
+    line-height: 2.8rem;
+  }
+
+  /* service cards */
+
+  .service-bottom-content{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card{
+    /* border: 2px solid red; */
+    width: 18.813rem;
+    height: 16.93rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+  }
+
+  .card1, .card3 {
+    background-color: #272727;
+  }
+  
+  .card2 {
+    background-color: #272727;
+    top: -4rem;
+  }
+
+  .card2 h2{
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .card1::before ,.card3::before{
+    content: "";
+    position: absolute;
+    width: 18.813rem;
+    height: 16.93rem;
+    border-width: 0.08rem;
+    border-style: solid;
+    border-image: linear-gradient(130deg, white, #272727) 1;
+    z-index: -1;
+    left: -0.125rem;
+    top: -0.rem;
+  }
+
+  .card2::before {
+    content: "";
+    position: absolute;
+    width: 18.813rem;
+    height: 16.93rem;
+    border-width: 0.125rem;
+    border-style: solid;
+    border-image: linear-gradient(-230deg, white, #272727) 1;
+    z-index: -1;
+    left: -0.125rem;
+    top: -0.rem;
+
+  }
+  .card:hover{
+    background-color: #4f4d4c;
+    scale:1.1;
+    
+  }
+
+  .card-choices{
+    background-color: #fceffb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-choices > h2{
+    color: black;
+    font-weight: 400;
+    font-size: 4rem;
+    margin: 4rem 0 0.6rem 0;
+  }
+
+  .card-choices > h3 {
+    font-size: 4rem;
+    font-weight: 700;
+    color:#F802F4;
+  }
+  .card-choices > p{
+    font-size: 1.1rem;
+    color: black;
+    margin-top: 4rem;
+    width: 50%;
+    letter-spacing: 0.125rem;
+    text-align: center;
+  }
+
+  .card-choices > p > span {
+    color: #813fada2;
+  }
+
+  .card-choices img{
+    position: relative;
+    top: -3.5rem;
+  }
+
+  /* **************************REVIEW SECTION***************************** */
+
+  .review-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .review-section>h2{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 4rem;
+    max-width: 80%;
+    padding: 2rem 4rem;
+  }
+
+  .review-section > h2 > span{
+    color:#F802F4;
+
+  }
+
+
+  .review-section > p{
+    font-size: 1.2rem;
+    max-width: 50%;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0 3rem;
+    color: #D1CFCF;
+  }
+
+  .review-cards{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto;
+    column-gap: 6rem;
+    row-gap: 6rem;
+    margin: 4rem 0 4rem 0;
+  }
+
+
+  .rating-card{
+    width: 28rem;
+    height: 15rem;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1.5rem 2rem 2rem 2rem;
+    background-color: #191E22;
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+
+    transition: all 0.4s ease-in-out;
+    position: relative;
+  }
+
+  .rating-card::before{
+    content: "";
+    width: 28rem;
+    height: 15rem;
+    border-radius: 0.08rem;
+    border-style: solid;
+    border-image: linear-gradient(180deg,white,#272727) 1;
+    position: absolute;
+    left: -0.1rem;
+    top: -0.1rem;
+
+  }
+
+  .rating-card:hover{
+    background-color: #3E3D3D;
+    scale: 1.1;
+  }
+
+  .rating-card > p {
+    margin-top: 1.2rem;
+  }
+
+
+  .review-cards img{
+    max-width: 10rem;
+  }
+
+  .review-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  .long-btn{
+    width: 5rem;
+    height: 1.125rem;
+    border: none;
+    border-radius: 0.938rem;
+    background-color: #f547f2;
+    box-shadow: 0 0 1.875rem 0 #f547f2;
+
+  }
+
+  .circular-btn {
+    height:0.938rem;
+    width:0.938rem;
+    border-radius: 50%;
+    background-color: #525252;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* ****************** banner ********************** */
+
+  .banner {
+    width: 100%;
+    background-color: #141212f5;
+    position: relative;
+    border:2px solid red;
+  }
+
+  .banner-container{
+    width: 100%;
+    height: 31.25rem;
+    background-image: url("./Photos/Rectangle\ 6773.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    z-index: -3;
+    opacity: 0.9;
+    
+  }
+
+  .diamond-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .diamond-img > img{
+    transform: scaleX(-1);
+  }
+
+  .diamond-img > img :nth-child(2){
+    position: absolute;
+    right: 0px;
+    top: 1.875rem;
+  }
+
+  .banner-front{
+    width: 100%;
+    height: 31.25rem;
+    background-image: url("./Photos/Rectangle\ 6774.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+  }
+

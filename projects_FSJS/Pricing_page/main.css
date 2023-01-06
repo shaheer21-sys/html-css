@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(45deg,#5222d0 0%, #ec615b 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    /* overflow-x:visible;
+    overflow-y:hidden; */
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.packages{
+    margin: 20px;
+    width: 23rem;
+    padding-bottom: 1.5em;
+    height: 35rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    border-radius: 30px;
+    /* border: 0px solid rgb(97,104,101); */
+    box-shadow: 2px 6px 25px #1e2321;
+    flex-wrap: wrap;
+    color: black;
+    transition: all 0.3s ease-in-out;
+
+  
+}
+
+
+
+
+
+.packages:hover{
+    scale: 1.1;
+    /* background-color: #d88380; */
+
+}
+
+
+.first{
+    color: #5222d0;
+}
+
+h1,h2{
+    font-size: 2.2em;
+}
+
+.list{
+    font-size: 20px;
+    list-style: none;
+    border-bottom: 1px solid #f4f4f4;
+    padding-inline-start: 0;
+    border-width: 1px;
+}
+
+ul>li{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* padding: 0; */
+    text-align: center;
+}
+
+.material-symbols-outlined {
+    color: #5222d0;
+
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 1000,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.cross{
+    color: #ec615b;
+}
+
+
+.top{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.input, label{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0;
+}
+
+.button{
+    padding: 10px 30px;
+    font-size: 1.4em;
+    margin: 15px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #ec615b;
+    background-color: #fff;
+    box-shadow: 0 0 1px 0 #ec615b inset,0 0 5px 1px #ec615b;
+}
+
+
+.button:hover{
+    background-color: #ec615b;
+    color: #fff;
+    transform: scale(1.1);
+    border-radius: 50px;
+
+}
+
+.package-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    margin-bottom:12em;
+}
+
+
+.switch{
+    position: relative;
+    display: inline-block; 
+    width: 60px;
+    height: 34px;
+    top: -7px;
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1e2321;
+    transform: translate(8px,8px);
+
+}
+
+.slider::before{
+    position: absolute;
+    /* cursor: pointer; */
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    transition: 0.4s;
+}
+
+input:checked + .slider{
+    background-color: #00cc99;
+    /* background-image: linear-gradient(45deg,#5222d0 0%, #ec615b 100%); */
+
+}
+
+
+input:focus + .slider{
+    box-shadow: 0 0 1px #50bfe6;
+}
+
+input:checked + .slider:before{
+    transform: translateX(26px);
+}
+
+.slider.round{
+    border-radius: 34px;
+} 
+
+.slider.round::before{
+    border-radius: 50%;
+}
+
+
+
+
+.head h1{
+    margin: 50px auto 0px auto;
+    width: fit-content;
+    font-size: 5rem;
+}
+
+
+
+
+@media screen and (max-width: 573px){
+    .head h1{
+        margin: auto;
+        width: fit-content;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .head h1{
+        margin: auto;
+        width: fit-content;
+        font-size: 2.7rem;
+    }
+}
+
+
+@media only screen and (min-width: 349px) and (max-width: 361px){
+    .head h1{
+        margin: auto;
+        width: fit-content;
+        font-size: 2.7rem;
+    }
+}
