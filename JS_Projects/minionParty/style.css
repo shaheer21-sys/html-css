@@ -24,9 +24,9 @@ h1{
 }
 
 button{
-    padding: 15px 40px;
+    padding: 0.5em 1.5em;
     font-size: 2rem;
-    border-radius: 50px;
+    border-radius: 2.5em;
     text-align: center;
     transition: all 0.5s ease;
     border: none;
@@ -35,8 +35,8 @@ button{
     color: azure;
 } 
 
-button span{
-    font-size: 10px;
+.button1 span{
+    font-size: 0.7rem;
     display: block;
 }
 
@@ -44,7 +44,7 @@ button:hover{
     transform: scale(1.1);
 }
 button:active{
-    transform: translateY(5px);
+    transform: translateY(0.5rem);
 }
 
 #minion{
@@ -58,3 +58,7 @@ button:active{
   'GRAD' 0,
   'opsz' 48
 }
+
+
+/* media queries  */
+/* 320px — 480px: Mobile devices */

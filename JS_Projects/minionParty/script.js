@@ -1,4 +1,4 @@
-const btn =  document.getElementById('button');
+const btn =  document.getElementById('button1');
 // console.log("hello");
 
 const randomColor = () => {
@@ -22,7 +22,7 @@ btn.addEventListener("click", changeRandomColor);
 
 
 // Experiment on disco
-const btn1 =document.getElementById("button1");
+const btn1 =document.getElementById("button2");
 
 
 let disco = null;
@@ -45,6 +45,7 @@ btn1.onclick = () =>{
     img1.src ='https://media.tenor.com/xyftqV6FPvgAAAAi/minions.gif';
     img1.style.width='200px';
     img1.style.height='200px';
+    img1.style.margin='auto';
     document.getElementById("minion").appendChild(img1);
 
 
