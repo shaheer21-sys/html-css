@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse event</title>
+</head>
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(21, 25, 31);
+;
+    }
+
+    .magic{
+        position: absolute;
+        background-color: whitesmoke;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        z-index: 1;
+        transform: scale(0);
+        transition: all 0.5s ease;
+    }
+
+    .square{
+        position: absolute;
+        background-color: whitesmoke;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        z-index: 1;
+        transform: scale(0);
+        transition: all 0.5s ease;
+
+    }
+
+
+</style>
+<body>
+    <div class="container"  id ="container" onclick="draw()"></div>
+
+    <script>
+
+        function draw(){
+            let magicDiv = document.createElement("div");
+            let mainDiv = document.getElementById("container");
+            var scenario = Math.random() < 0.8 ? "magic" : "square";
+            console.log(scenario);
+            magicDiv.classList.add(scenario);
+
+            addEventListener('click',function(e){
+
+
+                magicDiv.style.left = e.clientX -25 + "px";
+                magicDiv.style.top=e.clientY - 25 + "px";
+                mainDiv.appendChild(magicDiv);
+
+                setTimeout(() => {
+                    magicDiv.style.transform = 'scale(1)';
+                },100);
+
+                setTimeout(() => {
+                    mainDiv.removeChild(magicDiv);
+                    magicDiv.style.transform = 'scale(0)';
+                },1000);
+
+            });
+
+
+        }
+        
+    </script>
+</body>
+</html>

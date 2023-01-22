@@ -19,7 +19,7 @@ body{
 .packages{
     margin: 20px;
     width: 23rem;
-    padding-bottom: 1.5em;
+    padding-bottom: 1em;
     height: 35rem;
     background-color: #fff;
     display: flex;
@@ -199,12 +199,14 @@ input:checked + .slider:before{
 
 
 .head h1{
-    margin: 50px auto 0px auto;
+    margin: 10px auto 0px auto;
     width: fit-content;
     font-size: 5rem;
 }
 
+@media screen and (max-width:1440px){
 
+}
 
 
 @media screen and (max-width: 573px){
