@@ -12,6 +12,7 @@ body{
 h1{
     margin: 0.7em 0 0.5em 0;
     text-align: center;
+    
 }
 
 .buttons{
@@ -62,3 +63,18 @@ button:active{
 
 /* media queries  */
 /* 320px — 480px: Mobile devices */
+
+@media (min-width : 320px) and (max-width : 480px){
+
+    h1{
+        font-size: 1.5rem;
+        padding: 1.5em;
+        margin: 0.7em;
+    }
+
+    button{
+        font-size: 2rem;
+    }
+
+
+}
