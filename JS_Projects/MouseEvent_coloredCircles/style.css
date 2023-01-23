@@ -78,7 +78,8 @@ body{
 
 
   @media (min-width : 320px) and (max-width : 480px){
-    /* .box{
+    .box{
         height: 60%;
-    } */
+        overflow: scroll;
+    }
   }
