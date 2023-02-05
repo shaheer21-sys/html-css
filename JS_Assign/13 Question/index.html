@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age</title>
+</head>
+<body>
+    <div class="js" id="js">
+        <h1></h1>
+    </div>
+    <script>
+        // alert('hello');
+        // setTimeout(()=>{
+        //     alert('helo world');
+        // },3000);
+
+        // ..confirm
+        // let val = confirm('Are you sure ?');
+
+        // if(val){
+        //     document.getElementById('js').innerText= 'helo';
+        // }
+        // else{
+        //     document.getElementById('js').innerText='not';
+
+        // }
+
+        let age = prompt("Enter the age :");
+        if(age >=18){
+            document.querySelector('h1').innerText =' You are old enough to drive';
+
+        }
+
+        else{
+            let remainingAge = 18 - age;
+            document.querySelector('h1').innerText =` You have to wait ${remainingAge} more years to be eligible`;
+             
+        }
+    </script>
+</body>
+</html>

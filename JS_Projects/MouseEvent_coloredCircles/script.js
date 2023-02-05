@@ -41,6 +41,7 @@ box.addEventListener("click",(e) =>{
 
     circle.style.backgroundColor = randomColor;
 
+    //mouse event coordinates
     circle.style.left = e.clientX - 17 + "px";
     circle.style.top = e.clientY -17 + "px";
 
