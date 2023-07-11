@@ -249,14 +249,14 @@ const countries =  [
 
 
 
-// const countriesData=countries.map((ele)=>
-// {
-// 	return {...ele,name:ele.name.replace("Ethiopia","Hlooo")}
-// })
-// console.log(countriesData,"countriesData")
-
-const countFilter = countries.filter((ele) => {
-    return ele.name.includes('E') 
+const countriesData=countries.map((ele)=>
+{
+	return {...ele,name:ele.name.replace("Ethiopia","Hlooo")}
 })
+console.log(countriesData,"countriesData")
 
-console.log(countFilter);
+// const countFilter = countries.filter((ele) => {
+//     return ele.name.includes('E') 
+// })
+
+// console.log(countFilter);
